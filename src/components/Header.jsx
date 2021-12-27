@@ -1,4 +1,4 @@
-function Header(props) {
+function Header(props) {                   {/*Header Component*/}
     return (
         <header>
             <div className ='container'>
