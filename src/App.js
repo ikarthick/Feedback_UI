@@ -14,7 +14,6 @@ function App(){
            <FeedbackList feedback={feedback} />
     </div>
         </>
-     
     )
 }
 export default App;
