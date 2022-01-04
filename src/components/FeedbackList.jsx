@@ -1,7 +1,8 @@
 import FeedbackItem from "./FeedbackItem";
 
-function FeedbackList( {feedback} ) {
+function FeedbackList( {feedback,darkmode,handleDelete} ) {
     
+
     if(!feedback || feedback.length === 0){
         return 'No feedback fetched'
     }
@@ -9,7 +10,7 @@ function FeedbackList( {feedback} ) {
     return (
         <div className='feedback-list'>
             {feedback.map((item) => (
-               <FeedbackItem key={item.id} item={item} />
+               <FeedbackItem key={item.id} item={item} darkmode={darkmode} handleDelete={handleDelete} />
             ))}
         </div>
     )
